@@ -1,0 +1,14 @@
+x=[12,213,1231,123,123]
+y=x
+y[1]=000
+print(x)
+[12,000,1231,123,123]
+print(y)
+[12,000,1231,123,123]
+
+because y=x means it assigns the reference of x into y thus the location of the data in memory is for both of them is same.
+
+to avoid this problem use :
+y=list(x)
+or
+y=x[:]
